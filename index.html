@@ -1,1 +1,54 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createor的主页</title>
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="content">
+        </div>
+</body>
+
+<script src="./items.js" type="text/javascript"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        items.forEach((e) => {
+            let parent = document.querySelector(".content");
+            let newNode = document.createElement("div");
+            newNode.className = "box";
+            let project_type = e.type = 0 ? '公开' : '私有';
+            newNode.innerHTML = "<div class='p_t'>" + e.name + "</div>" +
+                "<div class='info'>" +
+                "    <div class='f_v'>" +
+                "       <span><i class='fork'></i>" + e.fork + "</span>" +
+                "       <span><i class='star'></i>" + e.star + "</span>" +
+                "       <span><i class='type'></i>" + project_type + "</span>" +
+                "    </div>" +
+                "   <div class='desc'>" + e.desc + "</div>" +
+                "</div >";
+            newNode.addEventListener("click", () => {
+                window.location = e.url;
+            });
+            parent.append(newNode);
+        });
+        document.querySelectorAll(".box").forEach((e) => {
+            e.addEventListener("mouseenter", () => {
+                e.querySelector(".p_t").style.animation = "show_t 0.5s forwards";
+                e.querySelector(".info").style.animation = "show_p 0.5s forwards";
+            });
+            e.addEventListener("mouseleave", () => {
+                e.querySelector(".p_t").style.animation = "hide_t 0.5s forwards";
+                e.querySelector(".info").style.animation = "hide_p 0.5s forwards";
+            });
+        });
+    }
+</script>
+
+</html>
