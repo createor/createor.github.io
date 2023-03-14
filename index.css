@@ -74,13 +74,13 @@
     background-repeat: no-repeat;
 }
 .star {
-    background-image: url(https://github.com/createor/createor.github.io/blob/master/icon/star.png);
+    background-image: url(./icon/star.png);
 }
 .fork {
-    background-image: url(https://github.com/createor/createor.github.io/blob/master/icon/fork.png);
+    background-image: url(./icon/fork.png);
 }
 .type {
-    background-image: url(https://github.com/createor/createor.github.io/blob/master/icon/type.png);
+    background-image: url(./icon/type.png);
 }
 .desc {
     height: calc(15vh - 20px);
