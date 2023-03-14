@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>createor的主页</title>
+    <link rel="shortcut icon" href="./icon/facvion.ico" type="image/x-icon">
     <link rel="stylesheet" href="./index.css" type="text/css" />
 </head>
 
@@ -23,6 +24,7 @@
             let parent = document.querySelector(".content");
             let newNode = document.createElement("div");
             newNode.className = "box";
+            newNode.style.backgroundImage = "url(" + e.bg_img + ")";
             let project_type = e.type = 0 ? '公开' : '私有';
             newNode.innerHTML = "<div class='p_t'>" + e.name + "</div>" +
                 "<div class='info'>" +
