@@ -13,13 +13,16 @@
 <body>
     <div class="container">
         <div class="header"></div>
-        <div class="content">
-        </div>
+        <div class="content"></div>
+    </div>
 </body>
 
 <script src="./items.js" type="text/javascript"></script>
 <script type="text/javascript">
     window.onload = function () {
+        document.querySelector(".header").addEventListener("click", () => {
+            window.location = "https://github.com/createor";
+        });
         items.forEach((e) => {
             let parent = document.querySelector(".content");
             let newNode = document.createElement("div");
