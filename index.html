@@ -37,7 +37,7 @@
             let newNode = document.createElement("div");
             newNode.className = "box";
             newNode.style.backgroundImage = "url(" + e.bg_img + ")";
-            let project_type = e.type = 0 ? '公开' : '私有';
+            let project_type = e.type === 0 ? '公开' : '私有';
             newNode.innerHTML = "<div class='p_t'>" + e.name + "</div>" +
                 "<div class='info'>" +
                 "    <div class='f_v'>" +
