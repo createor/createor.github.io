@@ -23,8 +23,8 @@ items = [{
     "bg_img": "./icon/gupiao.png",
     "type": 0, // 0-public公开,1-private私有
     "url": "https://github.com/createor/gupiao",
-    "fork": 2,
-    "star": 3   
+    "fork": 1,
+    "star": 2   
 },{
     "name": "监控键盘输入",
     "desc": "使用python监控键盘输入,过滤/禁止发送关键词汇",
@@ -57,4 +57,12 @@ items = [{
     "url": "https://github.com/createor/monitor",
     "fork": 0,
     "star": 0  
+},{
+    "name": "防火墙可视化",
+    "desc": "使用golang编写的防火墙可视化脚本",
+    "bg_img": "./icon/iptables.png",
+    "type": 0,
+    "url": "https://github.com/createor/iptables-rule",
+    "fork": 2,
+    "star": 3
 }]
