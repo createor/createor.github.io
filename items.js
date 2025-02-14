@@ -21,10 +21,10 @@ items = [{
     "name": "股票桌面端",
     "desc": "使用python的PyQt库开发的实时监测股票的桌面端程序",
     "bg_img": "./icon/gupiao.png",
-    "type": 1, // 0-public公开,1-private私有
+    "type": 0, // 0-public公开,1-private私有
     "url": "https://github.com/createor/gupiao",
-    "fork": 0,
-    "star": 0   
+    "fork": 2,
+    "star": 3   
 },{
     "name": "监控键盘输入",
     "desc": "使用python监控键盘输入,过滤/禁止发送关键词汇",
